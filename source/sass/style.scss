@@ -1,0 +1,18 @@
+$mobile-width: 414px;
+$tablet-width: 768px;
+$desktop-width: 1140px;
+
+$cl-grey: #4a4a4a;
+$cl-white: #ffffff;
+$cl-red: #ff4100;
+$cl-blue: #2e8ed8;
+$cl-blue-light: #86c7ff;
+$cl-blue-dark: #164cc1;
+$cl-blue-menu: #007dc8;
+$cl-blue-footer: #0071b2;
+
+@import "normalize";
+@import "mixin.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "blocks/visually-hidden.scss";

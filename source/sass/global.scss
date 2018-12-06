@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 320px;
+  padding: 0;
+  color: $cl-grey;
+  background-color: $cl-white;
+  //overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
