@@ -10,7 +10,7 @@
       <link type="text/plain" rel="author" href="humans.txt" />
   </head>
   <body>
-    <header class="header-main">
+    <header class="header-main header-main--main-page">
       <p class="header-main__logo">
         Artactive
       </p>
@@ -32,14 +32,111 @@
             <a href="#" class="main-nav__link">Контакты</a>
           </li>
         </ul>
+        <ul class="call-nav__list">
+          <li class="call-nav__item">
+            <a class="call-nav__link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+          </li>
+          <li class="call-nav__item">
+            <button class="call-nav__button call-nav__button--nojs button button--call" type="button">Заказать звонок</button>
+          </li>
+        </ul>
       </nav>
+      <section class="header-main__hero hero">
+          <p class="hero__lead">Размер не имеет значения</p>
+          <h1>Оперативная полиграфия и широкоформатная печать любого размера</h1>
+          <div class="hero__order">
+              <button class="hero__order-button button">Заказать печать</button>
+              <p class="hero__order-lead">С доставкой по Ярославлю и Ярославской области</p>
+          </div>
+      </section>
     </header>
-    <main>
+    <main class="page-content page-content--main-page">
+      <section class="page-content__section about">
+        <h2 class="page-content__section-header">О нас</h2>
+        <h3>Полный спектр услуг — от дизайна до печати</h3>
+        <p>К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
+        <p>В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
+        <p>При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
+        <ol class="about__workflow">
+          <li class="about__workflow-item">Приём и детальное обсуждение заказа</li>
+          <li class="about__workflow-item">Создание и согласование дизайн-макета</li>
+          <li class="about__workflow-item">Печать и постпечатная обработка изделий любых размеров</li>
+          <li class="about__workflow-item">Доставка готовой продукции</li>
+        </ol>
+      </section>
+      <section class="page-content__section services">
+        <h2 class="page-content__section-header header">Услуги</h2>
+        <section class="service-banner">
+          <h3 class="subheader">Широкоформатная печать баннеров, растяжек, афиш</h3>
+          <ul class="service-banner__list">
+            <li class="service-banner__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
+            <li class="service-banner__item">срочная печать за 3 часа</li>
+            <li class="service-banner__item">проварка карманов и сварка нескольких изображений</li>
+            <li class="service-banner__item">пробивка люверсов и вварка монтажных тросов</li>
+            <li class="service-banner__item">изготовление цветопробы</li>
+            <li class="service-banner__item">доставка баннеров</li>
+          </ul>
+          <div class="service-banner__order">
+            <p class="service-banner__order-question">Есть вопросы?</p>
+            <p class="service-banner__order-call">Закажите консультацию</p>
+            <button class="service-banner__order-call-button button" type="button">Заказать</button>
+          </div>
+          <div class="service-banner__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <img class="slider__img" src="#" alt="" width="570" height="460">
+              </li>
+              <li class="slider__item">
+                <img class="slider__img" src="#" alt="" width="570" height="460">
+              </li>
+              <li class="slider__item">
+                <img class="slider__img" src="#" alt="" width="570" height="460">
+              </li>
+            </ul>
+            <div class="slider__controls">
+              <button class="slider__control slider__control--left">
+                <span class="visually-hidden">Предъыдущий слайд</span>
+              </button>
+              <button class="slider__control slider__control--right">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
+            <p class="slider__title">Растяжка на ул. Ленина</p>
+          </div>
+        </section>
+        <section class="service-interior">
+          <h3 class="subheader">Широкоформатная печать для вашего интерьера</h3>
+          <p>Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
+          <button class="service-interior__request button" type="button">Оставить заявку</button>
+        </section>
+        <section class="service-polygraphy">
+          <h3>Оперативная полиграфия — от визитки до баннера</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error. </p>
+          <form class="service-polygraphy__order-consult" action="index.html" method="post">
+            <div class="service-polygraphy__order">
+              <p class="service-polygraphy__order-question">Есть вопросы?</p>
+              <p class="service-polygraphy__order-call">Оставьте заявку на консультацию</p>
+            </div>
+            <div class="service-polygraphy__form">
+              <input class="service-polygraphy__form-text-input text-input" type="text">
+              <input class="service-polygraphy__form-text-input text-input" type="text">
+              <button class="service-polygraphy__form-submit button" type="submit">Заказать</button>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="page-content__section reviews">
+        <h2 class="page-content__section-header">Отзывы</h2>
 
+      </section>
+      <section class="page-content__section faq">
+        <h2 class="page-content__section-header"></h2>
+      </section>
+      <section class="page-content__section contacts">
+        <h2 class="page-content__section-header"></h2>
+      </section>
     </main>
-    <footer>
-
-    </footer>
     <script src="js/app.min.js"></script>
   </body>
 </html>
