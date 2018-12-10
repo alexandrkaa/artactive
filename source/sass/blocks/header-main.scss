@@ -1,0 +1,19 @@
+.header-main {
+  color: $cl-white;
+  min-height: 829px;
+  padding: 0 15px;
+  background-color: $cl-purp;
+  background-image: url("../img/first-screen-bg-image-mobile@1x.png"), url("../img/first-screen-bg-lights-mobile@1x.png"), url("../img/first-screen-bg-mobile@1x.png");
+  background-position: center top 40px, center top 40px, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+}
+
+.header-main__header {
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.header-main__logo {
+  margin: 0;
+}
