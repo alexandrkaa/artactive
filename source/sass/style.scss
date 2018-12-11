@@ -6,6 +6,7 @@ $breakpoints: (
 
 $cl-purp: #7f38bd;
 $cl-purp-bg: #faf8fb;
+$cl-purp-hero-bg: #8c3dd7;
 $cl-white: #ffffff;
 $cl-black: #383d52;
 $cl-grey: #5e606a;
@@ -20,3 +21,6 @@ $cl-red: #fb0275;
 @import "blocks/header-main.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/hero.scss";
+@import "blocks/page-content.scss";
+@import "blocks/subheader.scss";
+@import "blocks/about.scss";

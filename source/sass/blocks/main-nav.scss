@@ -1,5 +1,16 @@
+.main-nav {
+  padding: 0 15px;
+}
 .main-nav__list {
-  .main-nav--openned & {
+  @include list-reset;
+  width: 100%;
+
+  &--menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav--opened & {
     display: block;
   }
 
@@ -11,7 +22,9 @@
 .main-nav__toggle {
   display: block;
   background: transparent linear-gradient(to bottom, transparent, transparent 7px, $cl-white 7px, $cl-white 10px, transparent 10px, transparent);
-  position: relative;
+  position: absolute;
+  right: 15px;
+  top: 24px;
   width: 25px;
   height: 17px;
   border: 0;
@@ -37,7 +50,7 @@
     left: 0;
   }
 
-  .main-nav--openned & {
+  .main-nav--opened & {
     background: transparent;
 
     &::before,
@@ -56,5 +69,27 @@
       left: 0;
       transform: rotate(45deg);
     }
+  }
+
+  // .main-nav--nojs & {
+  //   display: none;
+  // }
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  color: $cl-white;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include is-active {
+    color: $cl-red;
   }
 }

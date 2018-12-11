@@ -1,39 +1,24 @@
 .header-main {
   color: $cl-white;
   min-height: 829px;
-  padding: 0 15px;
+  padding: 0;
   padding-top: 24px;
-  background-color: $cl-purp;
-  display: grid;
-  grid-template-columns: auto, 16px;
-  grid-template-rows: 16px, auto;
+  background-color: $cl-purp-hero-bg;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
 }
 
 .header-main__logo {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 17px;
+  line-height: 17px;
   font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
   margin: 0;
-}
-
-.header-main__main-nav {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.header-main__hero {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  margin-left: 15px;
+  margin-right: auto;
 }
 
 .header-main__header {

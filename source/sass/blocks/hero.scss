@@ -1,9 +1,16 @@
 .hero {
-  background-image: url("../img/first-screen-bg-image-mobile@1x.png"), url("../img/first-screen-bg-lights-mobile@1x.png"), url("../img/first-screen-bg-mobile@1x.png");
+  background-image: url("../img/first-screen-bg-image-mobile@1x.png"), url("../img/first-screen-bg-lights-mobile@1x.png"), url("../img/first-screen-bg-mobile@1x.jpg");
   background-position: center top, center top, center top;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, auto;
+  background-size: auto, auto, cover;
+  min-height: calc(829px - 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 15px;
+  padding-bottom: 70px;
 }
+
 .hero__lead {
   font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 36px;

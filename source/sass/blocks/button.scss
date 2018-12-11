@@ -11,11 +11,10 @@
   text-transform: uppercase;
 
   &:hover {
-    box-shadow: 0 0 3px 1px $cl-grey;
+    text-decoration: underline;
   }
 
   @include is-active {
     background-color: darken($cl-red, 15%);
-    box-shadow: 0 0 3px 1px $cl-grey;
   }
 }
