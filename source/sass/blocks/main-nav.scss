@@ -1,5 +1,60 @@
-.main-nav {
-  &--closed {
+.main-nav__list {
+  .main-nav--openned & {
+    display: block;
+  }
+
+  .main-nav--closed & {
     display: none;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  background: transparent linear-gradient(to bottom, transparent, transparent 7px, $cl-white 7px, $cl-white 10px, transparent 10px, transparent);
+  position: relative;
+  width: 25px;
+  height: 17px;
+  border: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $cl-white;
+    transition: all ease-in-out 1s;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-nav--openned & {
+    background: transparent;
+
+    &::before,
+    &::after {
+      transition: all ease-in-out 1s;
+    }
+
+    &::before {
+      top: 7px;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      top: 7px;
+      left: 0;
+      transform: rotate(45deg);
+    }
   }
 }

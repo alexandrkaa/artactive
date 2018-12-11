@@ -15,7 +15,10 @@
         Artactive
       </p>
       <nav class="header-main__main-nav main-nav main-nav--nojs main-nav--closed">
-        <ul class="main-nav__list">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--menu">
           <li class="main-nav__item">
             <a href="#" class="main-nav__link">О нас</a>
           </li>
@@ -32,11 +35,11 @@
             <a href="#" class="main-nav__link">Контакты</a>
           </li>
         </ul>
-        <ul class="call-nav__list">
-          <li class="call-nav__item">
-            <a class="call-nav__link" href="tel:+79201488131">+7 (920) 148 81 31</a>
+        <ul class="main-nav__list main-nav__list--call">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="tel:+79201488131">+7 (920) 148 81 31</a>
           </li>
-          <li class="call-nav__item">
+          <li class="main-nav__item">
             <button class="call-nav__button call-nav__button--nojs button button--call" type="button">Заказать звонок</button>
           </li>
         </ul>

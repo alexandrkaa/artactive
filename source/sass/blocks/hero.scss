@@ -1,3 +1,9 @@
+.hero {
+  background-image: url("../img/first-screen-bg-image-mobile@1x.png"), url("../img/first-screen-bg-lights-mobile@1x.png"), url("../img/first-screen-bg-mobile@1x.png");
+  background-position: center top, center top, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+}
 .hero__lead {
   font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 36px;

@@ -2,18 +2,41 @@
   color: $cl-white;
   min-height: 829px;
   padding: 0 15px;
+  padding-top: 24px;
   background-color: $cl-purp;
-  background-image: url("../img/first-screen-bg-image-mobile@1x.png"), url("../img/first-screen-bg-lights-mobile@1x.png"), url("../img/first-screen-bg-mobile@1x.png");
-  background-position: center top 40px, center top 40px, center top;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, auto;
+  display: grid;
+  grid-template-columns: auto, 16px;
+  grid-template-rows: 16px, auto;
+}
+
+.header-main__logo {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0;
+}
+
+.header-main__main-nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.header-main__hero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .header-main__header {
   font-size: 21px;
   line-height: 29px;
-}
-
-.header-main__logo {
-  margin: 0;
 }
