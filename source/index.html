@@ -55,7 +55,7 @@
     </header>
     <main class="page-content page-content--main-page">
       <section class="page-content__section about">
-        <h2 class="page-content__section-header">О нас</h2>
+        <h2 class="page-content__section-header header">О нас</h2>
         <h3 class="subheader">Полный спектр услуг — от дизайна до печати</h3>
         <p>К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
         <p>В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
@@ -68,9 +68,9 @@
         </ol>
       </section>
       <section class="page-content__section services">
-        <h2 class="page-content__section-header header">Услуги</h2>
+        <h2 class="page-content__section-header page-content__section-header header header--services">Услуги</h2>
         <section class="service-banner">
-          <h3 class="subheader">Широкоформатная печать баннеров, растяжек, афиш</h3>
+          <h3 class="subheader">Широкоформатная <br>печать баннеров, <br>растяжек, афиш</h3>
           <ul class="service-banner__list">
             <li class="service-banner__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
             <li class="service-banner__item">срочная печать за 3 часа</li>
@@ -122,15 +122,19 @@
               <p class="service-polygraphy__order-call">Оставьте заявку на консультацию</p>
             </div>
             <div class="service-polygraphy__form">
-              <input class="service-polygraphy__form-text-input text-input" type="text">
-              <input class="service-polygraphy__form-text-input text-input" type="text">
+              <label>
+                <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Имя">
+              </label>
+              <label>
+                <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Телефон">
+              </label>
               <button class="service-polygraphy__form-submit button" type="submit">Заказать</button>
             </div>
           </form>
         </section>
       </section>
       <section class="page-content__section reviews">
-        <h2 class="page-content__section-header">Отзывы</h2>
+        <h2 class="page-content__section-header header">Отзывы</h2>
         <div class="reviews__wrapper slider">
           <ul class="reviews__list reviews-list">
             <li class="reviews-list__review">
@@ -175,7 +179,7 @@
         </div>
       </section>
       <section class="page-content__section faq">
-        <h2 class="page-content__section-header">Частые вопросы (FAQ)</h2>
+        <h2 class="page-content__section-header header">Частые вопросы (FAQ)</h2>
         <!-- GRID ? -->
         <ul class="faq__list faq-list">
           <li class="faq-list__item">
@@ -209,8 +213,12 @@
             <p class="faq__order-call">Оставьте заявку на консультацию</p>
           </div>
           <div class="faq__form">
-            <input class="faq__form-text-input text-input" type="text">
-            <input class="faq__form-text-input text-input" type="text">
+            <label>
+              <input class="faq__form-text-input text-input" type="text" placeholder="Имя">
+            </label>
+            <label>
+              <input class="faq__form-text-input text-input" type="text" placeholder="Телефон">
+            </label>
             <button class="faq__form-submit button" type="submit">Заказать</button>
           </div>
         </form>

@@ -1,0 +1,36 @@
+.service-banner {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.service-banner__order {
+  border-radius: 10px;
+  background-color: $cl-purp;
+  padding: 30px 23px;
+  color: $cl-white;
+  order: 3;
+}
+
+.service-banner__order-question {
+  font-size: 13px;
+  line-height: 24px;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.service-banner__order-call {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Open Sans Semibold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  margin: 8px 0;
+  margin-bottom: 35px;
+}
+
+.service-banner__list {
+  list-style-type: square;
+  order: 1;
+}
+
+.service-banner__slider {
+  order: 2;
+}

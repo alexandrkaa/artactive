@@ -10,7 +10,9 @@ $cl-purp-hero-bg: #8c3dd7;
 $cl-white: #ffffff;
 $cl-black: #383d52;
 $cl-grey: #5e606a;
+$cl-grey-border: #cccccc;
 $cl-red: #fb0275;
+$cl-blue-link: #3594dd;
 
 @import "normalize";
 @import "mixin.scss";
@@ -24,3 +26,7 @@ $cl-red: #fb0275;
 @import "blocks/page-content.scss";
 @import "blocks/subheader.scss";
 @import "blocks/about.scss";
+@import "blocks/service-banner.scss";
+@import "blocks/header.scss";
+@import "blocks/text-input.scss";
+@import "blocks/reviews-list.scss";

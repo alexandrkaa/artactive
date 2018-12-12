@@ -1,0 +1,13 @@
+.text-input {
+  border: 0;
+  box-shadow: 0;
+  border-bottom: 1px solid $cl-grey-border;
+  box-sizing: border-box;
+  padding: 11px;
+  background-color: transparent;
+
+  &::placeholder {
+    font-style: italic;
+    color: $cl-grey-border;
+  }
+}
