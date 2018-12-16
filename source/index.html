@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="nojs">
+<html lang="ru" dir="ltr" class="nojs nowebp">
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -46,10 +46,10 @@
       </nav>
       <section class="header-main__hero hero">
           <p class="hero__lead">Размер<br> не имеет<br> значения</p>
-          <h1 class="header-main__header">Оперативная полиграфия и широкоформатная печать любого размера</h1>
+          <h1 class="hero__header">Оперативная полиграфия<br> и широкоформатная печать<br> любого размера</h1>
           <div class="hero__order">
               <button class="hero__order-button button">Заказать печать</button>
-              <p class="hero__order-lead">С доставкой по Ярославлю и Ярославской области</p>
+              <p class="hero__order-lead">С доставкой по Ярославлю<br> и Ярославской области</p>
           </div>
       </section>
     </header>
@@ -57,14 +57,14 @@
       <section class="page-content__section about">
         <h2 class="page-content__section-header header">О нас</h2>
         <h3 class="subheader">Полный спектр услуг — от дизайна до печати</h3>
-        <p>К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
-        <p>В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
-        <p>При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
+        <p class="about__paragraph">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров, растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
+        <p class="about__paragraph">В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание. Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
+        <p class="about__paragraph">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата, которое неизменно остается на высоте.</p>
         <ol class="about__workflow">
-          <li class="about__workflow-item">Приём и детальное обсуждение заказа</li>
-          <li class="about__workflow-item">Создание и согласование дизайн-макета</li>
-          <li class="about__workflow-item">Печать и постпечатная обработка изделий любых размеров</li>
-          <li class="about__workflow-item">Доставка готовой продукции</li>
+          <li class="about__workflow-item about__workflow-item--get-order">Приём и детальное обсуждение заказа</li>
+          <li class="about__workflow-item about__workflow-item--create-design">Создание и согласование дизайн-макета</li>
+          <li class="about__workflow-item about__workflow-item--print-order">Печать и постпечатная обработка изделий любых размеров</li>
+          <li class="about__workflow-item about__workflow-item--deliver-order">Доставка готовой продукции</li>
         </ol>
       </section>
       <section class="page-content__section services">
@@ -85,15 +85,30 @@
             <button class="service-banner__order-call-button button" type="button">Заказать</button>
           </div>
           <div class="service-banner__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item">
-                <img class="slider__img" src="#" alt="" width="570" height="460">
+            <ul class="service-banner__slider-list slider__list">
+              <li class="service-banner__slider-item service-banner__slider-item--active slider__item">
+                <picture>
+                  <source type="image/jpeg" srcset="img/slider_banner_01.jpg 1x" media="(max-width: 750px)">
+                  <source type="image/jpeg" srcset="img/slider_banner_01.webp 1x" media="(max-width: 750px)">
+                  <img class="service-banner__slider-img slider__img" src="img/slider_banner_01.jpg" alt="Растяжка на улице ленина">
+                </picture>
+                <p class="service-banner__slider-caption slider__caption">Растяжка на ул. Брежнева</p>
               </li>
-              <li class="slider__item">
-                <img class="slider__img" src="#" alt="" width="570" height="460">
+              <li class="service-banner__slider-item slider__item">
+                <picture>
+                  <source type="image/jpeg" srcset="img/slider_banner_01.jpg 1x" media="(max-width: 750px)">
+                  <source type="image/jpeg" srcset="img/slider_banner_01.webp 1x" media="(max-width: 750px)">
+                  <img class="service-banner__slider-img slider__img" src="img/slider_banner_01.jpg" alt="Растяжка на улице ленина">
+                </picture>
+                <p class="service-banner__slider-caption slider__caption">Растяжка на ул. Сталина</p>
               </li>
-              <li class="slider__item">
-                <img class="slider__img" src="#" alt="" width="570" height="460">
+              <li class="service-banner__slider-item slider__item">
+                <picture>
+                  <source type="image/jpeg" srcset="img/slider_banner_01.jpg 1x" media="(max-width: 750px)">
+                  <source type="image/jpeg" srcset="img/slider_banner_01.webp 1x" media="(max-width: 750px)">
+                  <img class="service-banner__slider-img slider__img" src="img/slider_banner_01.jpg" alt="Растяжка на улице ленина">
+                </picture>
+                <p class="service-banner__slider-caption slider__caption">Растяжка на ул. Ленина</p>
               </li>
             </ul>
             <div class="slider__controls">
@@ -104,16 +119,15 @@
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
-            <p class="slider__title">Растяжка на ул. Ленина</p>
           </div>
         </section>
         <section class="service-interior">
           <h3 class="subheader">Широкоформатная печать для вашего интерьера</h3>
-          <p>Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
+          <p class="service-interior__paragraph">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
           <button class="service-interior__request button" type="button">Оставить заявку</button>
         </section>
         <section class="service-polygraphy">
-          <h3>Оперативная полиграфия — от визитки до баннера</h3>
+          <h3 class="subheader">Оперативная полиграфия — от визитки до баннера</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error. </p>
           <form class="service-polygraphy__order-consult" action="index.html" method="post">

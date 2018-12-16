@@ -1,0 +1,84 @@
+.slider__list {
+  @include list-reset;
+}
+
+.slider__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.slider__control {
+  display: block;
+  width: 90px;
+  height: 30px;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 90px;
+    height: 14px;
+    background-image: url("../img/slider-arrow@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px 84px;
+    left: 0;
+    top: 8px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/slider-arrow@2x.png");
+    }
+  }
+
+  .webp & {
+    &::before {
+      background-image: url("../img/slider-arrow@1x.webp");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/slider-arrow@2x.webp");
+      }
+    }
+  }
+}
+
+.slider__control--left {
+  &::before {
+    background-position: left top;
+  }
+
+  &:hover {
+    &::before {
+      background-position: left top -28px;
+    }
+  }
+
+  @include is-active {
+    &::before {
+      background-position: left top -56px;
+    }
+  }
+}
+
+.slider__control--right {
+  &::before {
+    background-position: left -14px;
+  }
+
+  &:hover {
+    &::before {
+      background-position: left top -42px;
+    }
+  }
+
+  @include is-active {
+    &::before {
+      background-position: left top -70px;
+    }
+  }
+}

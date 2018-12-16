@@ -1,0 +1,31 @@
+.service-interior {
+  padding: 0 15px;
+  padding-top: 47px;
+  background-color: $cl-white;
+  box-sizing: border-box;
+  min-height: 750px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sofa-bg@1x.png");
+  background-position: right bottom 56px;
+  background-size: 281px 355px;
+
+  @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    background-image: url("../img/sofa-bg@2x.png");
+  }
+
+  .webp & {
+    background-image: url("../img/sofa-bg@1x.webp");
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/sofa-bg@2x.webp");
+    }
+  }
+}
+
+.service-interior__paragraph {
+  margin-top: 38px;
+}
+
+.service-interior__request {
+  margin-top: 42px;
+}

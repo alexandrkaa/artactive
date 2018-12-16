@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 
 .header-main__logo {
@@ -19,9 +20,4 @@
   margin: 0;
   margin-left: 15px;
   margin-right: auto;
-}
-
-.header-main__header {
-  font-size: 21px;
-  line-height: 29px;
 }

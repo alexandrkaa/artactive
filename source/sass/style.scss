@@ -6,6 +6,7 @@ $breakpoints: (
 
 $cl-purp: #7f38bd;
 $cl-purp-bg: #faf8fb;
+$cl-purp-circles: #f0e2ff;
 $cl-purp-hero-bg: #8c3dd7;
 $cl-white: #ffffff;
 $cl-black: #383d52;
@@ -18,6 +19,7 @@ $cl-blue-link: #3594dd;
 @import "mixin.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "blocks/full-width.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/header-main.scss";
@@ -30,3 +32,6 @@ $cl-blue-link: #3594dd;
 @import "blocks/header.scss";
 @import "blocks/text-input.scss";
 @import "blocks/reviews-list.scss";
+@import "blocks/services.scss";
+@import "blocks/slider.scss";
+@import "blocks/service-interior.scss";

@@ -3,18 +3,39 @@
   background-position: center top, center top, center top;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto, auto, cover;
-  min-height: calc(829px - 24px);
+  min-height: calc(829px - 17px - 24px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0 15px;
-  padding-bottom: 70px;
+  padding-top: 335px;
+  box-sizing: border-box;
 }
 
 .hero__lead {
   font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 36px;
-  line-height: 45px;
+  line-height: 44px;
   font-weight: 900;
   text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1.3px;
+}
+
+.hero__header {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  margin-top: 23px;
+}
+
+.hero__order {
+  margin-top: 42px;
+}
+
+.hero__order-lead {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 24px;
 }

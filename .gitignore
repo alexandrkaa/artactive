@@ -13,3 +13,4 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 .ftpconfig
+template/

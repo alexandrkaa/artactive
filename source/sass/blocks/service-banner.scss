@@ -1,14 +1,29 @@
 .service-banner {
   padding: 0 15px;
+  padding-bottom: 73px;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/1@1x.png");
+  background-position: top 3px left 47px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: $cl-purp-bg;
+
+  @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    background-image: url("../img/1@2x.png");
+    background-size: 96px auto;
+  }
 }
+
 .service-banner__order {
   border-radius: 10px;
   background-color: $cl-purp;
-  padding: 30px 23px;
+  padding: 20px 23px;
+  padding-bottom: 28px;
   color: $cl-white;
   order: 3;
+  box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+  margin-top: 20px;
 }
 
 .service-banner__order-question {
@@ -16,21 +31,82 @@
   line-height: 24px;
   font-style: italic;
   margin: 8px 0;
+  margin-bottom: 0;
 }
 
 .service-banner__order-call {
   font-size: 16px;
   line-height: 24px;
   font-family: "Open Sans Semibold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
-  margin: 8px 0;
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .service-banner__list {
-  list-style-type: square;
+  @include list-reset;
+  padding: 14px 0;
   order: 1;
+}
+
+.service-banner__item {
+  &::before {
+    content: "• ";
+  }
 }
 
 .service-banner__slider {
   order: 2;
+}
+
+.service-banner__slider-list {
+  width: 100%;
+  min-height: 254px;
+  position: relative;
+}
+
+.service-banner__slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    .service-banner__slider-img {
+      filter: opacity(0);
+    }
+
+    .service-banner__slider-caption {
+      display: none;
+    }
+  }
+
+  &:nth-child(2) {
+    transform: scale(0.9);
+    top: 5px;
+    z-index: 2;
+    background-color: #c1bac2;
+  }
+
+  &:nth-child(3) {
+    transform: scale(0.8);
+    z-index: 1;
+    top: -10px;
+    background-color: #e7e2ec;
+  }
+
+  &--active {
+    top: 20px;
+    z-index: 3;
+  }
+}
+
+.service-banner__slider-caption {
+  margin: 20px 0;
+}
+
+.service-banner__slider-img {
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
 }

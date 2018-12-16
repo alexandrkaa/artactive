@@ -1,3 +1,105 @@
 .about {
   padding: 0 15px;
 }
+
+.about__workflow {
+  @include list-reset;
+  min-height: 750px;
+  position: relative;
+  background-image: url("../img/workflow-path-bg.svg");
+  background-position: left 90px top 91px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  max-width: map-get($breakpoints, mobile);
+  margin: 0 auto;
+}
+
+.about__workflow-item {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 18px;
+  text-align: center;
+  width: 135px;
+
+  &::before {
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: $cl-purp-circles;
+    background-image: radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+    position: absolute;
+    top: -120px;
+    left: 8px;
+  }
+
+  &--get-order {
+    top: 128px;
+    left: 84px;
+
+    &::before {
+      background-image: url("../img/ebook@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center center, center center;
+      background-size: 54px auto;
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/ebook@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+  }
+
+  &--create-design {
+    top: 326px;
+    left: 174px;
+
+    &::before {
+      background-image: url("../img/tablet@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center center, center center;
+      background-size: 64px auto;
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/tablet@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+  }
+
+  &--print-order {
+    top: 420px;
+    left: 3px;
+
+    &::before {
+      background-image: url("../img/writer@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center center, center center;
+      background-size: 54px auto;
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/writer@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+  }
+
+  &--deliver-order {
+    top: 659px;
+    left: 85px;
+
+    &::before {
+      background-image: url("../img/moving@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center center, center center;
+      background-size: 71px auto;
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/moving@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+  }
+}
+
+.about__paragraph {
+  margin: 24px 0;
+}

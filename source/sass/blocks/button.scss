@@ -12,6 +12,7 @@
 
   &:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 
   @include is-active {
