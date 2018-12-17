@@ -1,0 +1,40 @@
+.faq-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-list__item {
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(3) {
+    order: 2;
+  }
+
+  &:nth-child(5) {
+    order: 3;
+  }
+
+  &:nth-child(2) {
+    order: 4;
+  }
+
+  &:nth-child(4) {
+    order: 5;
+  }
+
+  &:nth-child(6) {
+    order: 6;
+  }
+}
+
+.faq-list__item-question {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Open Sans Semibold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}

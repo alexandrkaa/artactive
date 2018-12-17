@@ -45,6 +45,7 @@
 .service-banner__list {
   @include list-reset;
   padding: 14px 0;
+  margin: 0;
   order: 1;
 }
 
@@ -60,6 +61,8 @@
 
 .service-banner__slider-list {
   width: 100%;
+  max-width: map-get($breakpoints, mobile);
+  margin: 0 auto;
   min-height: 254px;
   position: relative;
 }
@@ -70,8 +73,8 @@
   left: 0;
   border-radius: 10px;
 
-  &:nth-child(2),
-  &:nth-child(3) {
+  &--second,
+  &--third {
     .service-banner__slider-img {
       filter: opacity(0);
     }
@@ -81,23 +84,28 @@
     }
   }
 
-  &:nth-child(2) {
+  // попроборвать добавить анимацию
+  &--active {
+    top: 20px;
+    z-index: 3;
+    filter: opacity(1);
+    transition: all ease-in-out 1s;
+  }
+
+  &--second {
     transform: scale(0.9);
     top: 5px;
     z-index: 2;
     background-color: #c1bac2;
+    transition: all ease-in-out 1s;
   }
 
-  &:nth-child(3) {
+  &--third {
     transform: scale(0.8);
     z-index: 1;
     top: -10px;
     background-color: #e7e2ec;
-  }
-
-  &--active {
-    top: 20px;
-    z-index: 3;
+    transition: all ease-in-out 1s;
   }
 }
 

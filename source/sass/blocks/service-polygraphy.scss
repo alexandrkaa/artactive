@@ -1,0 +1,40 @@
+.service-polygraphy {
+  padding: 45px 15px 60px 15px;
+}
+
+.service-polygraphy__paragraph {
+  margin: 25px 0;
+
+  &:first-of-type {
+    margin-top: 47px;
+  }
+}
+
+.service-polygraphy__order-consult {
+  display: block;
+  margin-top: 42px;
+}
+
+.service-polygraphy__order-question {
+  font-size: 16px;
+  line-height: 30px;
+  font-style: italic;
+  margin: 0;
+}
+
+.service-polygraphy__order-call {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.service-polygraphy__form-label {
+  display: block;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 34px;
+  }
+}
