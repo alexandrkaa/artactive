@@ -9,12 +9,12 @@ var supportsWebP = (function () {
 
 }());
 
-if (supportsWebP) {
-  var noWebpAll = document.querySelectorAll('.nowebp');
-  for(var i = 0; i < noWebpAll.length; i++) {
-    var noWebp = noWebpAll[i];
-    noWebp.classList.remove('nowebp');
-    noWebp.classList.add('webp');
+if (!supportsWebP) {
+  var webpAll = document.querySelectorAll('.webp');
+  for(var i = 0; i < webpAll.length; i++) {
+    var webp = webpAll[i];
+    webp.classList.remove('webp');
+    webp.classList.add('nowebp');
   }
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "Artactive",
+  "name": "artactive",
   "version": "1.0.0",
   "private": true,
   "description": "Шаблон Artactive",
@@ -34,7 +34,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
+    "build": "npm run editorconfig && npm run stylelint && gulp build",
     "deploy": "gulp deploy",
     "start": "gulp start"
   },
@@ -61,11 +61,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandrkaa/paradoxprava.git"
+    "url": "git+https://github.com/alexandrkaa/artactive.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/alexandrkaa/paradoxprava/issues"
+    "url": "https://github.com/alexandrkaa/artactive/issues"
   },
-  "homepage": "https://github.com/alexandrkaa/paradoxprava#readme"
+  "homepage": "https://github.com/alexandrkaa/artactive#readme"
 }

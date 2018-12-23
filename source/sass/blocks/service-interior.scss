@@ -5,19 +5,19 @@
   box-sizing: border-box;
   min-height: 750px;
   background-repeat: no-repeat;
-  background-image: url("../img/sofa-bg@1x.png");
+  background-image: url("../img/sofa-bg@1x.webp");
   background-position: right bottom 56px;
   background-size: 281px 355px;
 
   @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    background-image: url("../img/sofa-bg@2x.png");
+    background-image: url("../img/sofa-bg@2x.webp");
   }
 
-  .webp & {
-    background-image: url("../img/sofa-bg@1x.webp");
+  .nowebp & {
+    background-image: url("../img/sofa-bg@1x.png");
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      background-image: url("../img/sofa-bg@2x.webp");
+      background-image: url("../img/sofa-bg@2x.png");
     }
   }
 }

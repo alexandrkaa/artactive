@@ -24,7 +24,7 @@
     content: "";
     width: 90px;
     height: 14px;
-    background-image: url("../img/slider-arrow@1x.png");
+    background-image: url("../img/slider-arrow@1x.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90px 84px;
@@ -32,16 +32,16 @@
     top: 8px;
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      background-image: url("../img/slider-arrow@2x.png");
+      background-image: url("../img/slider-arrow@2x.webp");
     }
   }
 
-  .webp & {
+  .nowebp & {
     &::before {
-      background-image: url("../img/slider-arrow@1x.webp");
+      background-image: url("../img/slider-arrow@1x.png");
 
       @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        background-image: url("../img/slider-arrow@2x.webp");
+        background-image: url("../img/slider-arrow@2x.png");
       }
     }
   }

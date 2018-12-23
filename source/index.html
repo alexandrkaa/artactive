@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr" class="nojs nowebp">
+<html lang="ru" dir="ltr" class="nojs webp">
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -237,24 +237,35 @@
             <p class="faq__order-call">Оставьте заявку на консультацию</p>
           </div>
           <div class="faq__form">
-            <label>
+            <label class="faq__form-title">
               <input class="faq__form-text-input text-input" type="text" placeholder="Имя">
             </label>
-            <label>
+            <label class="faq__form-title">
               <input class="faq__form-text-input text-input" type="text" placeholder="Телефон">
             </label>
-            <button class="faq__form-submit button" type="submit">Заказать</button>
+            <button class="faq__form-submit button" type="submit">Отправить</button>
           </div>
         </form>
       </section>
       <section class="page-content__section contacts">
-        <div class="contacts__info"></div>
-        <img class="contacts__map" src="#" alt="">
+        <div class="contacts__info">
+          <h2 class="page-content__section-header header header--contacts">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--address">г. Ярославль, проспект Октября, 88</li>
+            <li class="contacts__item contacts__item--email"><a href="mailto: art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a></li>
+            <li class="contacts__item contacts__item--phone"><a href="tel: +79201488131">+7 (920) 148 81 31</a></li>
+          </ul>
+        </div>
+        <picture>
+          <source type="image/jpeg" srcset="img/contacts-map@1x.jpg 1x" media="(max-width: 750px)">
+          <source type="image/jpeg" srcset="img/contacts-map@1x.webp 1x" media="(max-width: 750px)">
+          <img class="contacts__map" src="img/contacts-map@1x.jpg" alt="Карта расположения офиса">
+        </picture>
       </section>
     </main>
     <footer class="footer-main">
       <p class="footer-main__copyright">ООО «АртАктив», 2017 &copy;</p>
-      <p class="footer-main__confidentiality">Политика конфиденциальноси</p>
+      <a class="footer-main__confidentiality">Политика конфиденциальноси</a>
     </footer>
     <script src="js/app.min.js"></script>
   </body>
