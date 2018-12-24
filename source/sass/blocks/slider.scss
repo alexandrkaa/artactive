@@ -36,7 +36,8 @@
     }
   }
 
-  .nowebp & {
+  .nowebp &,
+  .nojs & {
     &::before {
       background-image: url("../img/slider-arrow@1x.png");
 

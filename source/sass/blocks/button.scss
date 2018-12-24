@@ -19,3 +19,17 @@
     background-color: darken($cl-red, 15%);
   }
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .button--call {
+    box-sizing: border-box;
+    border: 2px solid $cl-red;
+    background-color: $cl-white;
+    color: $cl-red;
+    font-size: 11px;
+
+    @include is-active {
+      background-color: $cl-purp-bg;
+    }
+  }
+}

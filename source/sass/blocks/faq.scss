@@ -30,12 +30,13 @@
     background-image: url("../img/faq-form-bg@2x.webp");
   }
 
-  .nowebp & {
+  .nowebp &,
+  .nojs & {
     background-image: url("../img/faq-form-bg@1x.png");
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    background-image: url("../img/faq-form-bg@2x.png");
-  }
+      background-image: url("../img/faq-form-bg@2x.png");
+    }
   }
 }
 

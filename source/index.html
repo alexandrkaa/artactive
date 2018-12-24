@@ -14,7 +14,7 @@
       <p class="header-main__logo">
         Artactive
       </p>
-      <nav class="header-main__main-nav main-nav main-nav--nojs main-nav--closed">
+      <nav class="header-main__main-nav main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
@@ -45,11 +45,13 @@
         </ul>
       </nav>
       <section class="header-main__hero hero">
-          <p class="hero__lead">Размер<br> не имеет<br> значения</p>
-          <h1 class="hero__header">Оперативная полиграфия<br> и широкоформатная печать<br> любого размера</h1>
-          <div class="hero__order">
+          <div class="hero__wrapper">
+            <p class="hero__lead">Размер<br> не имеет<br> значения</p>
+            <h1 class="hero__header">Оперативная полиграфия<br> и широкоформатная печать<br> любого размера</h1>
+            <div class="hero__order">
               <button class="hero__order-button button">Заказать печать</button>
               <p class="hero__order-lead">С доставкой по Ярославлю<br> и Ярославской области</p>
+            </div>
           </div>
       </section>
     </header>
@@ -261,6 +263,7 @@
           <source type="image/jpeg" srcset="img/contacts-map@1x.webp 1x" media="(max-width: 750px)">
           <img class="contacts__map" src="img/contacts-map@1x.jpg" alt="Карта расположения офиса">
         </picture>
+        <iframe class="contacts__map-online" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f1caebb686323c137031d3d45177d6c10540382afa316d0afc10919f2e53ef1&amp;source=constructor" width="100%"></iframe>
       </section>
     </main>
     <footer class="footer-main">

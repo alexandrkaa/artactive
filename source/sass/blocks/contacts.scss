@@ -12,18 +12,32 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-  z-index: -1;
+  //z-index: -1;
 
   .js & {
     display: none;
   }
 }
 
+.contacts__map-online {
+  width: 100%;
+  height: 530px;
+  border: 0;
+  box-shadow: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //z-index: -1;
+}
+
 .contacts__info {
-  min-height: 265px;
+  min-height: 190px;
   border-radius: 10px;
   background-color: $cl-white;
   padding: 38px;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts__list {
@@ -32,6 +46,13 @@
 
 .contacts__item {
   margin-bottom: 20px;
+  line-height: 20px;
+  padding-left: 30px;
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   a {
     color: $cl-grey;
@@ -43,6 +64,69 @@
 
     @include is-active {
       color: $cl-purp;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  &--address {
+    &::before {
+      background-size: 12px 18px;
+      background-image: url("../img/contacts-map-geotag.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      background-size: 13px 10px;
+      background-image: url("../img/contacts-mail@1x.webp");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/contacts-mail@2x.webp");
+      }
+    }
+
+    .nowebp &,
+    .nojs & {
+      &::before {
+        background-image: url("../img/contacts-mail@1x.png");
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/contacts-mail@2x.png");
+        }
+      }
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-size: 16px 17px;
+      background-image: url("../img/contacts-phone@1x.webp");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/contacts-phone@2x.webp");
+      }
+    }
+
+    .nowebp &,
+    .nojs & {
+      &::before {
+        background-image: url("../img/contacts-phone@1x.png");
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/contacts-phone@2x.png");
+        }
+      }
     }
   }
 }

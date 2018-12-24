@@ -1,17 +1,27 @@
 .main-nav {
   padding: 0 15px;
+  background-color: $cl-purp-bg;
+  box-sizing: border-box;
+  width: 100%;
 
   &--opened {
-    background-color: $cl-purp-bg;
-    padding-bottom: 10px;
     margin-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 41px;
+    left: 0;
+
+    .nojs & {
+      position: static;
+    }
   }
 }
-
 
 .main-nav__list {
   @include list-reset;
   width: 100%;
+  position: relative;
+  box-sizing: border-box;
 
   &--menu {
     display: flex;
@@ -37,6 +47,10 @@
   height: 17px;
   border: 0;
 
+  .nojs & {
+    display: none;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -45,7 +59,7 @@
     width: 25px;
     height: 3px;
     background-color: $cl-white;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 0.5s;
   }
 
   &::before {
@@ -60,10 +74,12 @@
 
   .main-nav--opened & {
     background: transparent;
+    top: -24px;
+    right: 15px;
 
     &::before,
     &::after {
-      transition: all ease-in-out 1s;
+      transition: all ease-in-out 0.5s;
     }
 
     &::before {
@@ -78,10 +94,6 @@
       transform: rotate(45deg);
     }
   }
-
-  // .main-nav--nojs & {
-  //   display: none;
-  // }
 }
 
 .main-nav__link {
@@ -99,5 +111,43 @@
 
   @include is-active {
     color: $cl-red;
+  }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .main-nav {
+    position: absolute;
+    width: calc((750px / 12) * 5);
+    min-height: 600px;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    left: auto;
+    padding: 60px 50px 0 50px;
+    box-sizing: border-box;
+
+    &--closed {
+      min-height: 0;
+      background-color: transparent;
+    }
+  }
+
+  .main-nav__toggle {
+    background: transparent linear-gradient(to bottom, transparent, transparent 7px, $cl-white 7px, $cl-white 10px, transparent 10px, transparent);
+
+    .main-nav--opened & {
+      top: 24px;
+
+      &::before,
+      &::after {
+        background-color: $cl-grey;
+      }
+    }
+  }
+
+  .main-nav__link {
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 48px;
   }
 }

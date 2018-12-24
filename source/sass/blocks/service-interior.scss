@@ -13,7 +13,8 @@
     background-image: url("../img/sofa-bg@2x.webp");
   }
 
-  .nowebp & {
+  .nowebp &,
+  .nojs {
     background-image: url("../img/sofa-bg@1x.png");
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
