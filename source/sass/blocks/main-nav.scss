@@ -1,5 +1,36 @@
+@keyframes mob-menu-close {
+  from {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 41px;
+    left: 0;
+  }
+
+  to {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 41px;
+    left: -100%;
+  }
+}
+
+@keyframes mob-menu-close-toggle {
+  from {
+    top: -24px;
+    right: 15px;
+  }
+
+  to {
+    top: -24px;
+    right: auto;
+    left: calc(200% - 40px);
+  }
+}
+
 .main-nav {
-  padding: 0 15px;
+  padding: 0;
   background-color: $cl-purp-bg;
   box-sizing: border-box;
   width: 100%;
@@ -15,10 +46,16 @@
       position: static;
     }
   }
+
+  &--closed {
+    animation: mob-menu-close 1s ease;
+    animation-fill-mode: forwards;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
+  padding: 0 15px;
   width: 100%;
   position: relative;
   box-sizing: border-box;
@@ -30,10 +67,6 @@
 
   .main-nav--opened & {
     display: block;
-  }
-
-  .main-nav--closed & {
-    display: none;
   }
 }
 
@@ -94,6 +127,11 @@
       transform: rotate(45deg);
     }
   }
+
+  .main-nav--closed & {
+    animation: mob-menu-close-toggle 1s ease;
+    animation-fill-mode: forwards;
+  }
 }
 
 .main-nav__link {
@@ -129,19 +167,35 @@
     &--closed {
       min-height: 0;
       background-color: transparent;
+      animation: none;
+      width: 0;
+      padding: 0;
     }
   }
 
   .main-nav__toggle {
     background: transparent linear-gradient(to bottom, transparent, transparent 7px, $cl-white 7px, $cl-white 10px, transparent 10px, transparent);
+    right: 31px;
+    top: 27px;
 
     .main-nav--opened & {
-      top: 24px;
+      top: 27px;
+      right: 31px;
 
       &::before,
       &::after {
         background-color: $cl-grey;
       }
+    }
+
+    .main-nav--closed & {
+      animation: none;
+    }
+  }
+
+  .main-nav__list {
+    .main-nav--closed & {
+      display: none;
     }
   }
 
