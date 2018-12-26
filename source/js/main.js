@@ -39,3 +39,5 @@ mainMenuToggler.addEventListener("click", function(e) {
 });
 
 //=require node_modules/picturefill/dist/picturefill.min.js
+//=require node_modules\jquery\dist\jquery.min.js
+// //=require node_modules\lettering\dist\lettering.min.js

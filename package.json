@@ -55,6 +55,8 @@
     "node": "8.12"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
+    "lettering": "^0.4.1",
     "node-normalize-scss": "^8.0.0",
     "npx": "^10.2.0",
     "picturefill": "^3.0.3"
