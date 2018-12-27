@@ -1,18 +1,18 @@
+
 @keyframes mob-menu-close {
   from {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 41px;
     left: 0;
+    transform: skewX(0);
+  }
+
+  50% {
+    left: -50%;
+    transform: skewX(45deg);
   }
 
   to {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 41px;
     left: -100%;
+    transform: skewX(0);
   }
 }
 
@@ -34,12 +34,12 @@
   background-color: $cl-purp-bg;
   box-sizing: border-box;
   width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 41px;
 
   &--opened {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 41px;
     left: 0;
 
     .nojs & {
@@ -48,8 +48,16 @@
   }
 
   &--closed {
+    left: -100%;
+  }
+
+  &--animated {
     animation: mob-menu-close 1s ease;
     animation-fill-mode: forwards;
+  }
+
+  &::before {
+    content: "";
   }
 }
 
@@ -129,6 +137,12 @@
   }
 
   .main-nav--closed & {
+    right: auto;
+    top: -24px;
+    left: calc(200% - 40px);
+  }
+
+  .main-nav--animated & {
     animation: mob-menu-close-toggle 1s ease;
     animation-fill-mode: forwards;
   }
