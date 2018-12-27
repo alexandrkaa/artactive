@@ -1,3 +1,15 @@
+@keyframes service-slide-active-to-notactive {
+  from {
+    transform: scale(1);
+    filter: opacity(1);
+  }
+
+  to {
+    transform: scale(0);
+    filter: opacity(0);
+  }
+}
+
 .service-banner {
   padding: 0 15px;
   padding-bottom: 73px;
@@ -73,6 +85,11 @@
   left: 0;
   border-radius: 10px;
 
+  &--disappear {
+    animation: service-slide-active-to-notactive 1s ease;
+    animation-fill-mode: forwards;
+  }
+
   &--second,
   &--third {
     .service-banner__slider-img {
@@ -84,7 +101,6 @@
     }
   }
 
-  // попроборвать добавить анимацию
   &--active {
     top: 20px;
     z-index: 3;
