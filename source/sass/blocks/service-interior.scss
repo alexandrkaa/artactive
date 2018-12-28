@@ -4,21 +4,21 @@
   background-color: $cl-white;
   box-sizing: border-box;
   min-height: 750px;
-  background-repeat: no-repeat;
-  background-image: url("../img/sofa-bg@1x.webp");
-  background-position: right bottom 56px;
-  background-size: 281px 355px;
+  background-repeat: no-repeat, no-repeat;
+  background-image: url("../img/1@1x.webp"), url("../img/sofa-bg@1x.webp");
+  background-position: top 35px left 47px, right bottom 56px;
+  background-size: auto, 281px 355px;
 
   @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    background-image: url("../img/sofa-bg@2x.webp");
+    background-image: url("../img/1@1x.webp"), url("../img/sofa-bg@2x.webp");
   }
 
   .nowebp &,
   .nojs {
-    background-image: url("../img/sofa-bg@1x.png");
+    background-image: url("../img/1@1x.png"), url("../img/sofa-bg@1x.png");
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      background-image: url("../img/sofa-bg@2x.png");
+      background-image: url("../img/1@1x.png"), url("../img/sofa-bg@2x.png");
     }
   }
 }
