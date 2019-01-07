@@ -17,6 +17,10 @@
   }
 }
 
+.hero__scroll-down {
+  display: none;
+}
+
 .hero__lead {
   font-family: "Open Sans ExtraBold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 36px;
@@ -80,5 +84,46 @@
 
   .hero__header {
     font-size: 21px;
+    margin-top: 30px;
+    letter-spacing: -0.05rem;
+  }
+
+  .hero__order {
+    margin-top: 35px;
+    padding-right: 35px;
+  }
+
+  .hero__scroll-down {
+    display: block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent url("../img/hero-btn-down.svg") no-repeat center;
+    background-size: 20px 30px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      top: 6px;
+      width: 1px;
+      height: 5px;
+      background-color: $cl-white;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        top: 20px;
+      }
+    }
   }
 }

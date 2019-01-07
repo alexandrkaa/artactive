@@ -104,3 +104,9 @@
   margin: 24px 0;
   letter-spacing: 0.1px;
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .about {
+    padding: 0 30px;
+  }
+}

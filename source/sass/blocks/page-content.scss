@@ -21,3 +21,13 @@
     content: counter(section) ".";
   }
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .page-content__section-header {
+    margin-top: 40px;
+
+    &::before {
+      left: -33px;
+    }
+  }
+}

@@ -25,6 +25,7 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .header-main {
     min-height: 600px;
+    overflow-x: hidden;
   }
 
   .header-main__logo {
