@@ -150,7 +150,7 @@ gulp.task('refresh', function (done) {
   done();
 });
 
-gulp.task('img', gulp.series('images', 'webp', 'copy'));
+gulp.task('img', gulp.series('images', 'webp', 'sprite', 'copy'));
 //gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'js', 'html', 'minifyhtml', 'clean_wp', 'copy_wp'));
 gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'js', 'html', 'minifyhtml'));
 //gulp.task('deploy', gulp.series('build', 'publish'));

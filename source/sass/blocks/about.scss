@@ -2,6 +2,10 @@
   padding: 0 15px;
 }
 
+.about__scroll-down {
+  display: none;
+}
+
 .about__workflow {
   @include list-reset;
   min-height: 750px;
@@ -40,13 +44,24 @@
     left: 84px;
 
     &::before {
-      background-image: url("../img/ebook@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-image: url("../img/ebook@1x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
       background-size: 54px auto;
 
       @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        background-image: url("../img/ebook@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        background-image: url("../img/ebook@2x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+
+    .nojs &,
+    .nowebp & {
+      &::before {
+        background-image: url("../img/ebook@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/ebook@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        }
       }
     }
   }
@@ -56,13 +71,24 @@
     left: 170px;
 
     &::before {
-      background-image: url("../img/tablet@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-image: url("../img/tablet@1x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
       background-size: 64px auto;
 
       @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        background-image: url("../img/tablet@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        background-image: url("../img/tablet@2x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+
+    .nojs &,
+    .nowebp & {
+      &::before {
+        background-image: url("../img/tablet@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/tablet@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        }
       }
     }
   }
@@ -72,13 +98,24 @@
     left: 3px;
 
     &::before {
-      background-image: url("../img/writer@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-image: url("../img/writer@1x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
       background-size: 54px auto;
 
       @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        background-image: url("../img/writer@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        background-image: url("../img/writer@2x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+
+    .nojs &,
+    .nowebp & {
+      &::before {
+        background-image: url("../img/writer@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/writer@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        }
       }
     }
   }
@@ -88,13 +125,24 @@
     left: 85px;
 
     &::before {
-      background-image: url("../img/moving@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      background-image: url("../img/moving@1x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
       background-size: 71px auto;
 
       @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        background-image: url("../img/moving@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        background-image: url("../img/moving@2x.webp"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+      }
+    }
+
+    .nojs &,
+    .nowebp & {
+      &::before {
+        background-image: url("../img/moving@1x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+
+        @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          background-image: url("../img/moving@2x.png"), radial-gradient(at center, $cl-purp-circles, $cl-purp-circles 106px, $cl-white 106px, $cl-white);
+        }
       }
     }
   }
@@ -108,5 +156,77 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .about {
     padding: 0 30px;
+    position: relative;
+  }
+
+  .about__scroll-down-img {
+    fill: $cl-purp;
+    transition: fill 0.5s ease;
+  }
+
+  .about__scroll-down {
+    display: block;
+    width: 11px;
+    height: 130px;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      .about__scroll-down-img {
+        fill: #ffc623;
+      }
+    }
+  }
+
+  .about__workflow {
+    max-width: map-get($breakpoints, tablet);
+    background-image: url("../img/workflow-path-bg-tablet@1x.webp");
+    background-size: 484px 277px;
+    background-position: left 113px top 81px;
+    min-height: 620px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/workflow-path-bg-tablet@2x.webp");
+    }
+
+    .nojs &,
+    .nowebp & {
+      background-image: url("../img/workflow-path-bg-tablet@1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/workflow-path-bg-tablet@2x.png");
+      }
+    }
+  }
+
+  .about__workflow-item {
+    width: 170px;
+
+    &--get-order {
+      top: 143px;
+      left: 181px;
+    }
+
+    &--create-design {
+      top: 240px;
+      left: 570px;
+    }
+
+    &--print-order {
+      top: 324px;
+      left: 11px;
+    }
+
+    &--deliver-order {
+      top: 442px;
+      left: 384px;
+    }
   }
 }

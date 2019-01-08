@@ -83,3 +83,16 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .slider__controls {
+    padding: 35px 0;
+    justify-content: flex-start;
+  }
+
+  .slider__control {
+    &--right {
+      margin-left: 45px;
+    }
+  }
+}

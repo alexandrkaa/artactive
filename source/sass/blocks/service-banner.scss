@@ -144,3 +144,46 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .service-banner {
+    padding: 0 30px 73px 30px;
+  }
+
+  .service-banner__slider-caption {
+    margin: 35px 0;
+    text-align: right;
+    font-size: 13px;
+  }
+
+  .service-banner__slider-list {
+    width: 100%;
+    min-height: 515px;
+    max-width: map-get($breakpoints, tablet);
+  }
+
+  .service-banner__slider-item {
+    &--active {
+      top: 55px;
+      z-index: 3;
+      filter: opacity(1);
+      transition: all ease-in-out 1s;
+    }
+
+    &--second {
+      transform: scale(0.95);
+      top: 30px;
+      z-index: 2;
+      background-color: #c1bac2;
+      transition: all ease-in-out 1s;
+    }
+
+    &--third {
+      transform: scale(0.9);
+      z-index: 1;
+      top: 5px;
+      background-color: #e7e2ec;
+      transition: all ease-in-out 1s;
+    }
+  }
+}
