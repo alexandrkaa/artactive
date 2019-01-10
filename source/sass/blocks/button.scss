@@ -21,6 +21,10 @@
 }
 
 @media (min-width: map-get($breakpoints, tablet)) {
+  .button {
+    width: auto;
+  }
+
   .button--call {
     box-sizing: border-box;
     border: 2px solid $cl-red;

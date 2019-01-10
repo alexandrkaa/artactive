@@ -87,6 +87,7 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .slider__controls {
     padding: 35px 0;
+    padding-bottom: 40px;
     justify-content: flex-start;
   }
 

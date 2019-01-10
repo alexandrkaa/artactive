@@ -209,24 +209,28 @@
   .about__workflow-item {
     width: 170px;
 
+    &::before {
+      left: 35px;
+    }
+
     &--get-order {
       top: 143px;
-      left: 181px;
+      left: 154px;
     }
 
     &--create-design {
       top: 240px;
-      left: 570px;
+      left: 547px;
     }
 
     &--print-order {
       top: 324px;
-      left: 11px;
+      left: -16px;
     }
 
     &--deliver-order {
       top: 442px;
-      left: 384px;
+      left: 357px;
     }
   }
 }
