@@ -5,22 +5,26 @@
   box-sizing: border-box;
   min-height: 750px;
   background-repeat: no-repeat, no-repeat;
-  background-image: url("../img/1@1x.webp"), url("../img/sofa-bg@1x.webp");
+  background-image: url("../img/2@1x.webp"), url("../img/sofa-bg@1x.webp");
   background-position: top 35px left 47px, right bottom 56px;
   background-size: auto, 281px 355px;
 
   @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    background-image: url("../img/1@1x.webp"), url("../img/sofa-bg@2x.webp");
+    background-image: url("../img/2@1x.webp"), url("../img/sofa-bg@2x.webp");
   }
 
   .nowebp &,
   .nojs {
-    background-image: url("../img/1@1x.png"), url("../img/sofa-bg@1x.png");
+    background-image: url("../img/2@1x.png"), url("../img/sofa-bg@1x.png");
 
     @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      background-image: url("../img/1@1x.png"), url("../img/sofa-bg@2x.png");
+      background-image: url("../img/2@1x.png"), url("../img/sofa-bg@2x.png");
     }
   }
+}
+
+.service-interior__scroll-down {
+  display: none;
 }
 
 .service-interior__paragraph {
@@ -29,4 +33,64 @@
 
 .service-interior__request {
   margin-top: 42px;
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .service-interior {
+    position: relative;
+    padding: 0 30px;
+    padding-top: 15px;
+    min-height: 810px;
+    background-image: url("../img/2@1x.webp"), url("../img/sofa-bg-tablet@1x.webp");
+    background-position: top 3px left 45px, right bottom 60px;
+    background-size: auto, 536px 640px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/2@1x.webp"), url("../img/sofa-bg-tablet@2x.webp");
+    }
+
+    .nowebp &,
+    .nojs {
+      background-image: url("../img/2@1x.png"), url("../img/sofa-bg-tablet@1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/2@1x.png"), url("../img/sofa-bg-tablet@2x.png");
+      }
+    }
+  }
+
+  .service-interior__paragraph {
+    padding-right: 155px;
+  }
+
+  .service-interior__request {
+    margin-top: 45px;
+    padding: 0 47px;
+  }
+
+  .service-interior__scroll-down-img {
+    fill: $cl-purp;
+    transition: fill 0.5s ease;
+  }
+
+  .service-interior__scroll-down {
+    display: block;
+    width: 11px;
+    height: 130px;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      .service-interior__scroll-down-img {
+        fill: #ffc623;
+      }
+    }
+  }
 }

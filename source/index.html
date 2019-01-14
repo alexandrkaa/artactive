@@ -71,8 +71,7 @@
         </ol>
         <button class="about__scroll-down" type="button" name="aboutScrollDown">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="130" viewBox="0 0 11 130">
-            <path class="about__scroll-down-img" d="M1 0a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm9 47a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V48a1 1 0 0 1 1-1z"
-             fill-rule="evenodd" /></svg>
+            <path class="about__scroll-down-img" d="M1 0a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm9 47a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V48a1 1 0 0 1 1-1z" fill-rule="evenodd" /></svg>
         </button>
       </section>
       <section class="page-content__section services">
@@ -136,51 +135,63 @@
           </div>
         </section>
         <section class="service-interior">
-          <h3 class="subheader">Широкоформатная печать для вашего интерьера</h3>
+          <h3 class="subheader subheader--service-interior">Широкоформатная печать<br> для вашего интерьера</h3>
           <p class="service-interior__paragraph">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты</p>
           <button class="service-interior__request button" type="button">Оставить заявку</button>
+          <button class="service-interior__scroll-down" type="button" name="serviceInteriorScrollDown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="130" viewBox="0 0 11 130">
+              <path class="service-interior__scroll-down-img" d="M1 0a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm9 47a1 1 0 0 1 1 1v81a1 1 0 0 1-2 0V48a1 1 0 0 1 1-1z"
+                fill-rule="evenodd" /></svg>
+          </button>
         </section>
         <section class="service-polygraphy">
-          <h3 class="subheader">Оперативная полиграфия - от визитки до баннера</h3>
+          <h3 class="subheader subheader--service-polygraphy">Оперативная полиграфия -<br> от визитки до баннера</h3>
           <p class="service-polygraphy__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <p class="service-polygraphy__paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error. </p>
-          <picture>
-            <source type="image/png" srcset="img/firm-style@1x.png 1x, img/firm-style@2x.png 2x" media="(max-width: 750px)">
-            <source type="image/webp" srcset="img/firm-style@1x.webp 1x, img/firm-style@1x.webp 2x" media="(max-width: 750px)">
-            <img class="service-polygraphy__firm-style" src="img/firm-style@1x.png" alt="Растяжка на улице ленина">
-          </picture>
           <form class="service-polygraphy__order-consult" action="index.html" method="post">
-            <div class="service-polygraphy__order">
-              <p class="service-polygraphy__order-question">Есть вопросы?</p>
-              <p class="service-polygraphy__order-call">Оставьте заявку на консультацию</p>
-            </div>
-            <div class="service-polygraphy__form">
-              <label class="service-polygraphy__form-label">
-                <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Имя">
-              </label>
-              <label class="service-polygraphy__form-label">
-                <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Телефон">
-              </label>
-              <button class="service-polygraphy__form-submit button" type="submit">Отправить</button>
+            <picture>
+              <source type="image/png" srcset="img/firm-style@1x.png 1x, img/firm-style@2x.png 2x" media="(max-width: 779px)">
+              <source type="image/webp" srcset="img/firm-style@1x.webp 1x, img/firm-style@1x.webp 2x" media="(max-width: 779px)">
+              <source type="image/png" srcset="img/firm-style-tablet@1x.png 1x, img/firm-style-tablet@2x.png 2x" media="(max-width: 1150px)">
+              <source type="image/webp" srcset="img/firm-style-tablet@1x.webp 1x, img/firm-style-tablet@1x.webp 2x" media="(max-width: 1150px)">
+              <img class="service-polygraphy__firm-style" src="img/firm-style@1x.png" alt="Растяжка на улице ленина">
+            </picture>
+            <div class="service-polygraphy__order-wrapper">
+              <div class="service-polygraphy__order">
+                <p class="service-polygraphy__order-question">Есть вопросы?</p>
+                <p class="service-polygraphy__order-call">Оставьте заявку<br> на консультацию</p>
+              </div>
+              <div class="service-polygraphy__form">
+                <label class="service-polygraphy__form-label">
+                  <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Имя">
+                </label>
+                <label class="service-polygraphy__form-label">
+                  <input class="service-polygraphy__form-text-input text-input" type="text" placeholder="Телефон">
+                </label>
+                <button class="service-polygraphy__form-submit button" type="submit">Отправить</button>
+              </div>
             </div>
           </form>
         </section>
       </section>
       <section class="page-content__section reviews">
-        <h2 class="page-content__section-header header header--reviews visually-hidden">Отзывы</h2>
+        <h2 class="page-content__section-header header header--reviews">Отзывы</h2>
         <div class="reviews__wrapper slider">
           <ul class="reviews__list reviews-list">
             <li class="reviews-list__review reviews-list__review--active">
               <picture>
-                <source type="image/png" srcset="img/reviews-photo@1x.png 1x, img/reviews-photo@2x.png 2x" media="(max-width: 750px)">
-                <source type="image/webp" srcset="img/reviews-photo@1x.webp 1x, img/reviews-photo@2x.webp 2x" media="(max-width: 750px)">
+                <source type="image/png" srcset="img/reviews-photo@1x.png 1x, img/reviews-photo@2x.png 2x" media="(max-width: 1150px)">
+                <source type="image/webp" srcset="img/reviews-photo@1x.webp 1x, img/reviews-photo@2x.webp 2x" media="(max-width: 1150px)">
                 <img class="reviews-list__image" width="136" height="136" src="img/reviews-photo@1x.png" alt="Фото Александрова Максима">
               </picture>
-              <p class="reviews-list__review-text">
-                Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!
-              </p>
-              <p class="reviews-list__name">Александров Максим, 24 года</p>
-              <a class="reviews-list__social-link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+              <div class="reviews-list__review-wrapper">
+                <p class="reviews-list__review-text">
+                  Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать.
+                  Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!
+                </p>
+                <p class="reviews-list__name">Александров Максим, 24 года</p>
+                <a class="reviews-list__social-link" href="https://vk.com/mr.sharp">vk.com/mr.sharp</a>
+              </div>
             </li>
             <li class="reviews-list__review reviews-list__review--passive">
               <picture>

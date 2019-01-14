@@ -5,11 +5,23 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 30px;
+
+  &--service-interior {
+    br {
+      display: none;
+    }
+  }
+
+  &--service-polygraphy {
+    br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: map-get($breakpoints, tablet)) {
   .subheader {
-    font-size: 30px;
+    font-size: 32px;
     margin-top: 50px;
     margin-bottom: 32px;
 
@@ -18,8 +30,26 @@
       margin-bottom: 43px;
       line-height: 40px;
 
-      & br {
+      br {
         display: none;
+      }
+    }
+
+    &--service-interior {
+      line-height: 35px;
+      margin-bottom: 62px;
+
+      br {
+        display: inline;
+      }
+    }
+
+    &--service-polygraphy {
+      line-height: 38px;
+      margin-top: 60px;
+
+      br {
+        display: inline;
       }
     }
   }

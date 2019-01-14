@@ -2,3 +2,19 @@
   margin: 0;
   padding-top: 20px;
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .reviews {
+    padding-top: 60px;
+  }
+
+  .reviews-list__review {
+    margin: 0 30px;
+    display: flex;
+  }
+
+  .reviews-list__image {
+    width: 136px;
+    height: 136px;;
+  }
+}

@@ -1,10 +1,8 @@
 /* TEAM */
-Developer, Administrator: Komarov Alexander
+Developer: Komarov Alexander
 Site: http://enut.ru, http://bananalearning.ru
-Location: Russia, Moscow
-Designer: Platon Osenenko
 Location: Russia, Moscow
 
 /* SITE */
-Standards: HTML5, CSS3, PHP
-Software: atom, gulp
+Standards: HTML5, CSS3
+Software: VSCode, Gulp

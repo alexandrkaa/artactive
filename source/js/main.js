@@ -18,6 +18,16 @@ if (!supportsWebP) {
   }
 }
 
+var getCoords = function (elem) { // кроме IE8-
+  var box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+
+}
+
 var nojs = document.querySelector('.nojs');
 nojs.classList.remove('nojs');
 nojs.classList.add('js');
@@ -44,14 +54,32 @@ var heroScrolldown = document.querySelector('.hero__scroll-down');
 var pageContent = document.querySelector('.page-content');
 heroScrolldown.addEventListener('click', function(e) {
   e.preventDefault();
-  pageContent.scrollIntoView(true);
+  // pageContent.scrollIntoView(true);
+  window.scrollTo({
+    top: getCoords(pageContent).top,
+    behavior: "smooth"
+  });
 });
 
 var aboutScrollDown = document.querySelector('.about__scroll-down');
 var services = document.querySelector('.services');
 aboutScrollDown.addEventListener('click', function (e) {
   e.preventDefault();
-  services.scrollIntoView(true);
+  // services.scrollIntoView(true);
+  window.scrollTo({
+    top: getCoords(services).top,
+    behavior: "smooth"
+  });
+});
+
+var serviceInteriorScrollDown = document.querySelector('.service-interior__scroll-down');
+var servicePolygraphy = document.querySelector('.service-polygraphy');
+serviceInteriorScrollDown.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: getCoords(servicePolygraphy).top,
+    behavior: "smooth"
+  });
 });
 
 //=require node_modules/picturefill/dist/picturefill.min.js
