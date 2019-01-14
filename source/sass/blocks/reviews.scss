@@ -15,6 +15,17 @@
 
   .reviews-list__image {
     width: 136px;
-    height: 136px;;
+    height: 136px;
+    max-width: none;
+    margin: 37px 50px 0 44px;
+  }
+
+  .reviews-list__review-text {
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  .reviews-list__name {
+    margin-top: 8px;
   }
 }
