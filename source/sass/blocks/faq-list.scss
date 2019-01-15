@@ -38,3 +38,9 @@
   margin-top: 15px;
   margin-bottom: 20px;
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .faq-list__item-question {
+    margin-bottom: 22px;
+  }
+}
