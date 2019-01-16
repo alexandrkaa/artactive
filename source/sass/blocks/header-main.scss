@@ -4,6 +4,15 @@
   padding: 0;
   padding-top: 24px;
   background-color: $cl-purp-hero-bg;
+  // display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  // position: relative;
+  box-sizing: border-box;
+  display: block;
+}
+
+.header-main__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -32,5 +41,22 @@
     position: relative;
     z-index: 1;
     margin-left: 30px;
+  }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .header-main {
+    position: static;
+    display: block;
+  }
+
+  .header-main__wrapper {
+    flex-direction: row;
+    max-width: map-get($breakpoints, desktop);
+    margin: 0 auto;
+  }
+
+  .header-main__logo {
+    margin: 0;
   }
 }
