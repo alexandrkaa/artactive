@@ -130,3 +130,24 @@
     }
   }
 }
+
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .contacts {
+    padding: 0 30px;
+    padding-top: 65px;
+  }
+
+  .contacts__info {
+    max-width: 310px;
+    padding: 55px 15px 80px 60px;
+  }
+
+  .contacts__list {
+    margin-top: 50px;
+  }
+
+  .contacts__item {
+    padding-left: 25px;
+  }
+}
