@@ -48,15 +48,22 @@
   .header-main {
     position: static;
     display: block;
+    padding-top: 0;
   }
 
   .header-main__wrapper {
     flex-direction: row;
+    align-items: flex-start;
     max-width: map-get($breakpoints, desktop);
     margin: 0 auto;
+    padding: 0 15px;
   }
 
   .header-main__logo {
     margin: 0;
+    margin-top: 68px;
+    margin-right: 75px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

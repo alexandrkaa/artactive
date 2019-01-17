@@ -23,17 +23,31 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .button {
     width: auto;
+
+    &--call {
+      box-sizing: border-box;
+      border: 2px solid $cl-red;
+      background-color: $cl-white;
+      color: $cl-red;
+      font-size: 11px;
+
+      @include is-active {
+        background-color: $cl-purp-bg;
+      }
+    }
   }
+}
 
-  .button--call {
-    box-sizing: border-box;
-    border: 2px solid $cl-red;
-    background-color: $cl-white;
-    color: $cl-red;
-    font-size: 11px;
-
-    @include is-active {
-      background-color: $cl-purp-bg;
+@media (min-width: map-get($breakpoints, desktop)) {
+  .button {
+    &--call {
+      border-color: $cl-white;
+      background-color: transparent;
+      color: $cl-white;
+      height: 35px;
+      font-weight: bold;
+      margin-top: 5px;
+      width: 163px;
     }
   }
 }

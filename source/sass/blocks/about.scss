@@ -234,3 +234,33 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+  }
+
+  .about__wrapper {
+    width: 570px;
+    order: 2;
+    padding-top: 60px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    margin-right: auto;
+  }
+
+  .about__workflow {
+    order: 1;
+    margin: 0;
+    margin-left: auto;
+    width: 570px;
+  }
+
+  .about__workflow-item {
+    &--get-order {
+      top: 233px;
+    }
+  }
+}

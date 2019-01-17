@@ -133,6 +133,45 @@
 }
 
 @media (min-width: map-get($breakpoints, desktop)) {
-  min-height: 940px;
-  margin-top: -100px;
+  .hero {
+    min-height: 940px;
+    margin-top: -118px;
+    position: relative;
+  }
+
+  .hero__wrapper {
+    width: 535px;
+    padding-top: 166px;
+  }
+
+  .hero__lead {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  .hero__header {
+    margin-top: 40px;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+  }
+
+  .hero__order {
+    margin-top: 77px;
+    display: flex;
+  }
+
+  .hero__order-button {
+    max-width: 250px;
+    margin-right: 27px;
+  }
+
+  .hero__order-lead {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  .hero__scroll-down {
+    bottom: 69px;
+  }
 }
