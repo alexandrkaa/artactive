@@ -240,6 +240,7 @@
     display: flex;
     flex-direction: row;
     padding: 0 15px;
+    padding-bottom: 125px;
   }
 
   .about__wrapper {
@@ -256,11 +257,42 @@
     margin: 0;
     margin-left: auto;
     width: 570px;
+
+    background-image: url("../img/workflow-path-bg-desktop@1x.webp");
+    background-size: 316px 268px;
+    background-position: left 105px top 180px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/workflow-path-bg-desktop@2x.webp");
+    }
+
+    .nojs &,
+    .nowebp & {
+      background-image: url("../img/workflow-path-bg-desktop@1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/workflow-path-bg-desktop@2x.png");
+      }
+    }
   }
 
   .about__workflow-item {
     &--get-order {
       top: 233px;
+    }
+
+    &--create-design {
+      top: 374px;
+      left: 363px;
+    }
+
+    &--print-order {
+      top: 413px;
+    }
+
+    &--deliver-order {
+      top: 563px;
+      left: 192px;
     }
   }
 }

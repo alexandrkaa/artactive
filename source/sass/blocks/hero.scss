@@ -137,16 +137,40 @@
     min-height: 940px;
     margin-top: -118px;
     position: relative;
+    background-image: url("../img/first-screen-bg-desktop@1x.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .nowebp &,
+    .nojs & {
+      background-image: url("../img/first-screen-bg-desktop@1x.jpg");
+    }
   }
 
   .hero__wrapper {
-    width: 535px;
+    width: 100%;
+    max-width: map-get($breakpoints, desktop);
+    margin: 0 auto;
     padding-top: 166px;
+    background-image: url("../img/first-screen-bg-image-desktop@1x.webp"), url("../img/first-screen-bg-lights-desktop@1x.webp");
+    background-position: left -95px top 130px, left center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 647px 548px, 629px 631px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .nowebp &,
+    .nojs & {
+      background-image: url("../img/first-screen-bg-image-desktop@1x.png"), url("../img/first-screen-bg-lights-desktop@1x.png");
+    }
   }
 
   .hero__lead {
     font-size: 60px;
     line-height: 75px;
+    margin-right: 130px;
   }
 
   .hero__header {
@@ -154,11 +178,13 @@
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 0.1rem;
+    margin-right: 75px;
   }
 
   .hero__order {
     margin-top: 77px;
     display: flex;
+    min-width: 470px;
   }
 
   .hero__order-button {

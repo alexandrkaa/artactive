@@ -57,3 +57,12 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .header {
+    &--services {
+      margin: 0 15px;
+      margin-top: 68px;
+    }
+  }
+}
