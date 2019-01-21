@@ -61,8 +61,9 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .header {
     &--services {
-      margin: 0 15px;
+      margin: 0 auto;
       margin-top: 68px;
+      max-width: map-get($breakpoints, desktop) - 30px;
     }
   }
 }
