@@ -94,3 +94,36 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .service-interior {
+    padding-top: 80px;
+    padding-left: calc(((100% - 1170px) / 2) + 600px);
+    min-height: 1045px;
+    background-image: url("../img/2@1x.webp"), url("../img/sofa-bg-desktop@1x.webp");
+    background-position: left calc(((100% - 1170px) / 2) + 590px) top 70px, left calc(((100% - 1170px) / 2) + 380px) bottom 100px;
+    background-size: auto, 1276px 813px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/2@1x.webp"), url("../img/sofa-bg-desktop@2x.webp");
+    }
+
+    .nowebp &,
+    .nojs {
+      background-image: url("../img/2@1x.png"), url("../img/sofa-bg-desktop@1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/2@1x.png"), url("../img/sofa-bg-desktop@2x.png");
+      }
+    }
+  }
+
+  .service-interior__paragraph {
+    padding-right: 0;
+    max-width: 540px;
+  }
+
+  .service-interior__request {
+    margin-top: 55px;
+  }
+}

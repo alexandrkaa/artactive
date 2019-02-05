@@ -216,6 +216,7 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .service-banner {
     padding: 0 15px;
+    padding-bottom: 75px;
     max-width: map-get($breakpoints, desktop);
     margin: 0 auto;
     display: grid;

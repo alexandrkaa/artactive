@@ -137,10 +137,14 @@
     min-height: 940px;
     margin-top: -118px;
     position: relative;
-    background-image: url("../img/first-screen-bg-desktop@1x.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url("../img/first-screen-bg-desktop@1x.webp");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-image: url("../img/first-screen-bg-image-desktop@1x.webp"), url("../img/first-screen-bg-lights-desktop@1x.webp"), url("../img/first-screen-bg-desktop@1x.webp");
+    background-position: left calc(((100% - 1170px) / 2) + 227px) top 180px, left calc(((100% - 1170px) / 2) + 430px) top 100px, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 647px 548px, 629px 631px, cover;
 
     .nowebp &,
     .nojs & {
@@ -153,10 +157,10 @@
     max-width: map-get($breakpoints, desktop);
     margin: 0 auto;
     padding-top: 166px;
-    background-image: url("../img/first-screen-bg-image-desktop@1x.webp"), url("../img/first-screen-bg-lights-desktop@1x.webp");
-    background-position: left -95px top 130px, left center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 647px 548px, 629px 631px;
+    // background-image: url("../img/first-screen-bg-image-desktop@1x.webp"), url("../img/first-screen-bg-lights-desktop@1x.webp");
+    // background-position: left -95px top 130px, left center;
+    // background-repeat: no-repeat, no-repeat;
+    // background-size: 647px 548px, 629px 631px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
