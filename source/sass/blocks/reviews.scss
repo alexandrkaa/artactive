@@ -32,7 +32,17 @@
 
 @media (min-width: map-get($breakpoints, desktop)) {
   .reviews {
-    padding: 0 calc(((100% - 1170px) / 2) + 15px);
+    // padding: 0 calc(((100% - 1170px) / 2) + 15px);
+    padding: 0;
     padding-top: 100px;
+  }
+
+  .reviews__list {
+    margin-top: 55px;
+  }
+
+  .reviews-list__review {
+    max-width: 845px;
+    padding: 25px;
   }
 }

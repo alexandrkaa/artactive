@@ -101,3 +101,10 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .slider__controls--reviews {
+    max-width: map-get($breakpoints, desktop) - 30px;
+    margin: 0 auto;
+  }
+}
