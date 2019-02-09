@@ -102,3 +102,74 @@
     width: 100%;
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .service-polygraphy {
+    padding: 75px calc(((100% - 1170px) / 2) + 15px) 60px calc(((100% - 1170px) / 2) + 15px);
+    box-sizing: border-box;
+    background-image: url("../img/3@1x.webp"), url("../img/paper-plane-desktop@1x.webp");
+    background-position: top 60px left calc(((100% - 1170px) / 2) + 15px), bottom 55px right calc(((100% - 1170px)/2) + 130px);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 160px auto, 503px 340px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/3@2x.webp"), url("../img/paper-plane-desktop@2x.webp");
+      background-size: 160px auto, 503px 340px;
+    }
+
+    .nojs &,
+    .nowebp & {
+      background-image: url("../img/3@1x.png"), url("../img/paper-plane-desktop@1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/3@2x.png"), url("../img/paper-plane-desktop@2x.png");
+        background-size: 160px auto, 503px 340px;
+      }
+    }
+  }
+
+  .service-polygraphy__paragraph {
+    max-width: 50%;
+  }
+
+  .service-polygraphy__firm-style {
+    position: absolute;
+    top: -457px;
+    left: 562px;
+  }
+
+  .service-polygraphy__order-consult {
+    position: relative;
+    background: none;
+  }
+
+  .service-polygraphy__order-wrapper {
+    flex-basis: 100%;
+    margin-top: 63px;
+  }
+
+  .service-polygraphy__form {
+    max-width: none;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .service-polygraphy__order-call {
+    br {
+      display: none;
+    }
+  }
+
+  .service-polygraphy__form-label {
+    min-width: 240px;
+    margin-right: 40px;
+
+    &:last-of-type {
+      margin-right: 50px;
+    }
+  }
+
+  .service-polygraphy__form-submit {
+    max-width: 190px;
+  }
+}
