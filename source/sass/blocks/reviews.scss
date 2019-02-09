@@ -29,3 +29,10 @@
     margin-top: 8px;
   }
 }
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .reviews {
+    padding: 0 calc(((100% - 1170px) / 2) + 15px);
+    padding-top: 100px;
+  }
+}

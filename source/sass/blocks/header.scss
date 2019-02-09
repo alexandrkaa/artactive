@@ -65,5 +65,11 @@
       margin-top: 68px;
       max-width: map-get($breakpoints, desktop) - 30px;
     }
+
+    &--reviews {
+      margin: 0 auto;
+      margin-top: 46px;
+      max-width: map-get($breakpoints, desktop) - 30px;
+    }
   }
 }

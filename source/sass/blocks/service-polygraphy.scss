@@ -106,6 +106,7 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .service-polygraphy {
     padding: 75px calc(((100% - 1170px) / 2) + 15px) 60px calc(((100% - 1170px) / 2) + 15px);
+    padding-bottom: 130px;
     box-sizing: border-box;
     background-image: url("../img/3@1x.webp"), url("../img/paper-plane-desktop@1x.webp");
     background-position: top 60px left calc(((100% - 1170px) / 2) + 15px), bottom 55px right calc(((100% - 1170px)/2) + 130px);
