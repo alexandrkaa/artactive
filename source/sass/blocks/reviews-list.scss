@@ -64,10 +64,42 @@
 }
 
 @media (min-width: map-get($breakpoints, desktop)) {
+  .reviews__list {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    --reviews__list-width: calc(100%);
+  }
+
   .reviews-list__review {
-    &--active {
-      --transformXValue: calc(((100% - 1170px) / 2));
-      transform: translateX(var(--transformXValue));
+    // min-width: 845px;
+    // max-width: 845px;
+    flex-basis: 845px;
+    flex-shrink: 0;
+    padding: 25px;
+    justify-content: space-between;
+
+    &--active,
+    &--passive,
+    &--passive:last-of-type {
+      position: relative;
+      transform: translateX(0);
+    }
+
+    &--passive {
+      z-index: -1;
+    }
+
+    &:first-of-type {
+      margin-left: calc(((100% - 845px) / 2) - 845px - 120px);
     }
   }
+
+  // .reviews-list__review {
+  //   &--active {
+  //     --transformXValue: calc(((100% - 1170px) / 2));
+  //     transform: translateX(var(--transformXValue));
+  //   }
+  // }
 }
