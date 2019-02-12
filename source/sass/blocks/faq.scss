@@ -147,3 +147,28 @@
     }
   }
 }
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .faq {
+    padding: 0 calc(((100% - 1170px)/2) + 15px) 100px calc(((100% - 1170px)/2) + 15px);
+  }
+
+  .faq__form-box {
+    background-image: url("../img/faq-form-bg-desktop@1x.webp");
+    background-position: left center;
+    background-size: 241px 219px;
+
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/faq-form-bg-desktop@2x.webp");
+    }
+
+    .nowebp &,
+    .nojs & {
+      background-image: url("../img/faq-form-bg@-desktop1x.png");
+
+      @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+        background-image: url("../img/faq-form-bg@-desktop2x.png");
+      }
+    }
+  }
+}
