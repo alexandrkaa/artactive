@@ -88,7 +88,31 @@
     }
 
     &--passive {
-      z-index: -1;
+      top: 0;
+    }
+
+    &--passive-left,
+    &--passive-right {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    }
+
+    &--passive-left {
+      &::before {
+        background-image: linear-gradient(to right, $cl-white 0%, $cl-white 75%, transparent);
+      }
+    }
+
+    &--passive-right {
+      &::before {
+        background-image: linear-gradient(to left, $cl-white 0%, $cl-white 75%, transparent);
+      }
     }
 
     &:first-of-type {

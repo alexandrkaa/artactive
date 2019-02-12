@@ -106,5 +106,6 @@
   .slider__controls--reviews {
     max-width: map-get($breakpoints, desktop) - 30px;
     margin: 0 auto;
+    margin-left: calc((100% - 845px) / 2);
   }
 }
